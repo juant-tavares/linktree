@@ -3,9 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Linktree</title>
+    <title>Meu LinkTree</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 300px;
+            height: 400px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #8f8e8e;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .description {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .social-links div {
+            width: 50px;
+            height: 50px;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="profile-pic">Foto de Perfil</div>
+        <div class="description">
+            <p>Descrição breve</p>
+        </div>
+        <div class="social-links">
+            <div><a href="https://www.linkedin.com" target="_blank">Linkedin</a></div>
+            <div><a href="https://www.github.com" target="_blank">GitHub</a></div>
+            <div><a href="https://www.instagram.com" target="_blank">Instagram</a></div>
+        </div>
+    </div>
 </body>
 </html>
